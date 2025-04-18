@@ -1,0 +1,45 @@
+<ion-content class="informe-generador-page">
+  <!-- Fondo y Círculos decorativos -->
+  <div class="background-gradient"></div>
+  <div class="background-circle circle-1"></div>
+  <div class="background-circle circle-2"></div>
+
+  <!-- Contenedor de contenido -->
+  <div class="content-wrapper">
+    <!-- Header -->
+    <div class="header">
+      <h1>Informe Generador</h1>
+    </div>
+
+    <!-- Contenedor del formulario -->
+    <div class="form-container">
+      <div class="form-group">
+        <div class="form-label">username:</div>
+        <div class="form-value">user</div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">tipo:</div>
+        <div class="form-value">ahorrado</div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">tiempo:</div>
+        <div class="form-value">mensual</div>
+      </div>
+
+      <!-- Botón generar -->
+      <ion-button expand="block" class="login-button">
+        GENERAR
+      </ion-button>
+
+      <!-- Enlace de descarga -->
+      <div class="download-container">
+        <a href="#" class="download-link">Descargar</a>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<!-- Footer de navegación -->
+<app-nav-footer [activeTab]="activeTab" (tabChange)="setActiveTab($event)"></app-nav-footer>

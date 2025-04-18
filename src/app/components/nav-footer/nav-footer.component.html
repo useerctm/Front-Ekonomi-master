@@ -1,0 +1,20 @@
+<ion-footer class="nav-footer">
+  <div class="nav-container">
+    <div class="nav-button" [ngClass]="{'active': activeTab === 'home'}" (click)="setActiveTab('home')">
+      <ion-icon name="home"></ion-icon>
+      <span class="nav-label">Inicio</span>
+    </div>
+    <div class="nav-button" [ngClass]="{'active': activeTab === 'graphics'}" (click)="setActiveTab('graphics')">
+      <ion-icon name="bar-chart"></ion-icon>
+      <span class="nav-label">Gráficos</span>
+    </div>
+    <div class="nav-button" [ngClass]="{'active': activeTab === 'chatbot'}" (click)="setActiveTab('chatbot')">
+      <ion-icon name="chatbubble-ellipses"></ion-icon>
+      <span class="nav-label">ChatBot</span>
+    </div>
+    <div class="nav-button" [ngClass]="{'active': activeTab === 'documentos'}" (click)="setActiveTab('documentos')">
+      <ion-icon name="document-text"></ion-icon>
+      <span class="nav-label">Documentos</span>
+    </div>
+  </div>
+</ion-footer>

@@ -1,0 +1,75 @@
+<ion-content class="dashboard-container">
+  <div class="background-gradient"></div>
+  <div class="background-circle circle-1"></div>
+  <div class="background-circle circle-2"></div>
+
+  <div class="content-wrapper">
+    <!-- Header -->
+    <div class="header-section">
+      <div class="logo-text">Ekonomi</div>
+      <ion-icon name="notifications-outline" class="notification-icon"></ion-icon>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main-section">
+      <div class="financial-card">
+        <div class="card-header">
+          <div class="date-section">
+            <p class="date-label">Fecha de facturación</p>
+            <div class="date-value">
+              <p>Mensual</p>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="amount-section">
+          <h2 class="amount">$000.000</h2>
+          <p class="amount-caption">monto abonado</p>
+        </div>
+
+        <div class="chart-section">
+          <div class="chart-container">
+            <div class="chart-bar">
+              <div class="chart-label">-</div>
+              <div class="chart-track">
+                <div class="chart-fill" style="width: 60%"></div>
+              </div>
+            </div>
+            <div class="chart-bar">
+              <div class="chart-label">-</div>
+              <div class="chart-track">
+                <div class="chart-fill" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="chart-bar">
+              <div class="chart-label">-</div>
+              <div class="chart-track">
+                <div class="chart-fill" style="width: 40%"></div>
+              </div>
+            </div>
+            <div class="chart-bar">
+              <div class="chart-label">-</div>
+              <div class="chart-track">
+                <div class="chart-fill" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="chart-bar">
+              <div class="chart-label">-</div>
+              <div class="chart-track">
+                <div class="chart-fill" style="width: 30%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-section">
+          <a href="#" class="history-link">Ver Historial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <app-nav-footer [activeTab]="activeTab" (tabChange)="setActiveTab($event)"></app-nav-footer>
+</ion-content>

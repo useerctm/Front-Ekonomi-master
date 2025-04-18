@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Flexo';
+    src: url('/assets/fonts/Flexo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  :host {
+    --primary-blue: #2656bf;
+    --secondary-blue: #4287d6;
+    --accent-turquoise: #4ecdc4;
+    --light-turquoise: #a9e4e0;
+    --white: #ffffff;
+    --light-gray: #f5f8fb;
+    --dark-text: #333333;
+    --light-text: #ffffff;
+    --ion-font-family: 'Flexo', sans-serif;
+  }
+  
+  ion-content {
+    --background: transparent;
+    padding-bottom: 56px; /* Espacio para el nav-footer */
+  }
+  
+  /* Background elements */
+  .background-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(145deg, var(--white) 0%, var(--light-gray) 40%, var(--secondary-blue) 100%);
+    z-index: 1;
+    opacity: 0.8;
+  }
+  
+  /* Círculos decorativos */
+  .background-circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .circle-1 {
+    width: 200px;
+    height: 200px;
+    top: -60px;
+    right: -60px;
+    background-color: var(--accent-turquoise);
+    opacity: 0.2;
+  }
+  
+  .circle-2 {
+    width: 160px;
+    height: 160px;
+    bottom: 25%;
+    left: -50px;
+    background-color: var(--secondary-blue);
+    opacity: 0.1;
+  }
+  
+  /* Content wrapper */
+  .content-wrapper {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  .header h1 {
+    color: var(--dark-text);
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Flexo', sans-serif;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  .header h1:hover {
+    color: var(--primary-blue);
+    transform: scale(1.05);
+  }
+  
+  /* Form container */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Form group */
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-label {
+    font-size: 16px;
+    color: var(--dark-text);
+    font-family: 'Flexo', sans-serif;
+  }
+  
+  .form-value {
+    background-color: rgba(240, 240, 240, 0.7);
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: var(--secondary-blue);
+    font-size: 16px;
+    max-width: 60%;
+    text-align: center;
+    font-family: 'Flexo', sans-serif;
+  }
+  
+  /* Button */
+  ion-button.login-button {
+    --background: linear-gradient(120deg, var(--accent-turquoise), var(--primary-blue));
+    --background-activated: var(--primary-blue);
+    --background-hover: var(--primary-blue);
+    --border-radius: 25px;
+    --color: var(--light-text);
+    --box-shadow: 0 4px 12px rgba(78, 205, 196, 0.3);
+    font-weight: bold;
+    margin-top: 30px;
+    height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Flexo', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  ion-button.login-button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Download link */
+  .download-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .download-link {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Flexo', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .download-link:hover {
+    text-decoration: underline;
+    color: var(--secondary-blue);
+  }
+  
+  /* Tab Bar */
+  ion-tab-bar {
+    --background: rgba(255, 255, 255, 0.9);
+    --border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  ion-tab-button {
+    --color: var(--dark-text);
+    --color-selected: var(--primary-blue);
+    transition: all 0.3s ease;
+  }
+  
+  ion-tab-button:hover {
+    --color: var(--primary-blue);
+    transform: scale(1.05);
+  }
+  
+  /* Media Query for smaller devices */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      padding: 15px;
+    }
+  
+    .header h1 {
+      font-size: 24px;
+    }
+  
+    .form-value {
+      font-size: 14px;
+    }
+  
+    .download-link {
+      font-size: 14px;
+    }
+  }
+  
